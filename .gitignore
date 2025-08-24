@@ -1,0 +1,13 @@
+# IDE metadata
+/.idea/
+/.vscode/
+
+# Python cache
+__pycache__/
+
+# Output folders
+figures/
+checkpoints/
+wandb/
+experiments/
+old_experiments_dump/

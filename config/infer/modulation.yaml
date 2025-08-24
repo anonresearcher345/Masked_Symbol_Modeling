@@ -1,0 +1,7 @@
+# This is only used for
+# experiment folder tag.
+# To truely change the modulation type,
+# modify "data/data_generator.py".
+
+family: mixed # psk |  qam | mixed
+M: 0 # Modulation order | 0 for mixed

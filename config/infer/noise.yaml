@@ -1,0 +1,10 @@
+type: middleton_a # Switch to `middleton_a` for Middleton Class A noise
+                  # Switch to `awgn` for AWGN 
+                  # Switch to `none` for non-impaired waveforms
+                  # If using `none` option, run infer_clean.py
+snr_db: [-20, -15, -10, -5, 0, 5, 10, 15, 20] # When using `none` option,
+                           # change this to `["inf"]`.
+
+# Uncomment below when switching to middleton_a
+A: 0.020315
+gamma: 1.0e-6

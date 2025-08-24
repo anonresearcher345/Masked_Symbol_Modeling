@@ -1,0 +1,10 @@
+checkpoint: checkpoints/Masked-Symbol-Model/2025-07-08_16-49-44/best.pt
+batch_size: 64
+seeds: [17, 29, 41]
+mask_strategy: custom # Switch to `no_mask` for 0-% masking
+                   # `m15` for 15-% masking
+                   # or to `custom` for
+                   # adding Middleton Class A noise to
+                   # each waveform and masking
+                   # the symbols affected by the impulsive noise.
+target_symbols: 10000 # Number of symbols to predict

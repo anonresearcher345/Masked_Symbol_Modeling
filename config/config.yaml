@@ -1,0 +1,34 @@
+# ---------------------
+# Configuration for Waveform Data Generation
+# ---------------------
+
+# List of modulation schemes to be used during training or inference.
+# Format: [modulation_family, M (modulation order), label_index]
+
+mod_tuple:
+  - ["psk", 2, 0]
+  - ["psk", 4, 1]
+  - ["psk", 8, 2]
+  - ["psk", 16, 3]
+  - ["qam", 4, 4]
+  - ["qam", 16, 5]
+  - ["qam", 64, 6]
+  - ["qam", 256, 7]
+
+# Samples per symbol values to sample from during waveform generation.
+sps: 8 
+
+# Filter span values in number of symbols.
+filt_span_in_sym: [10, 12, 14, 16]
+
+# RC filter roll-off factors to sample from.
+beta: [0.25, 0.35, 0.45, 0.55, 0.65, 0.75]
+
+# Number of samples to represent one realization of a waveform.
+n_samples: 1024
+
+learning_rate: 1.0e-3
+embedding_dim: 512
+train_batch_size: 64
+max_steps: 50000
+early_stop_patience: 10000
